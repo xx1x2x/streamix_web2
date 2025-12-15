@@ -1,0 +1,27 @@
+.mapWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 16px;
+}
+
+.mapImage {
+  width: 100%;
+  max-width: 553px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 480px) {
+  .mapWrapper {
+    margin-top: 16px;
+  }
+
+  .mapImage {
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,86 @@
+.programMenu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0 40px;
+  flex-wrap: wrap;
+}
+
+.menuButton,
+.activeButton {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  min-width: 150px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.menuButton {
+  background-color: #5b5b5b;
+}
+
+.menuButton:hover {
+  background-color: #777777;
+  transform: translateY(-1px);
+}
+
+.activeButton {
+  background-color: #888888;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+
+.programContent {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.programContent h2,
+.programContent h3,
+.programContent h4,
+.trainingPlan,
+.daySchedule,
+.exerciseList li {
+  color: #ffffff !important;
+}
+
+.welcomeMessage h2,
+.welcomeMessage p {
+  color: #ffffff !important;
+}
+
+.trainingPlan {
+  margin-top: 16px;
+}
+
+.daySchedule {
+  margin-bottom: 16px;
+}
+
+.exerciseList {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .programMenu {
+    gap: 8px;
+  }
+
+  .menuButton,
+  .activeButton {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .programContent {
+    padding: 15px;
+  }
+}
